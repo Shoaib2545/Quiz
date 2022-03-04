@@ -10,7 +10,7 @@ class FinalResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text('Quiz App'),),
       body: Container(
         width: double.infinity,
         height: double.infinity,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz/constant/color_constant.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({Key? key}) : super(key: key);
@@ -10,7 +11,13 @@ class Welcome extends StatelessWidget {
       body: Container(
         width: mediaQuery.size.width,
         height: mediaQuery.size.height,
-        color: Colors.blue,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: [
+            ColorsConsts.blue,
+            ColorsConsts.blue.withOpacity(0.6),
+            ColorsConsts.blue,
+          ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+        ),
         child: Stack(
           children: [
             Positioned(

@@ -112,8 +112,9 @@ class HomePage extends StatelessWidget {
           PopupMenuButton<int>(
             onSelected: (item) => handleClick(item),
             itemBuilder: (context) => [
-              PopupMenuItem<int>(value: 0, child: Text('Difficulty')),
-              PopupMenuItem<int>(value: 1, child: Text('Settings')),
+              const PopupMenuItem<int>(value: 0, child: Text('Difficulty')),
+              const PopupMenuItem<int>(
+                  value: 1, child: Text('Number of Questions')),
             ],
           ),
         ],
@@ -131,6 +132,8 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 quizPage(context, sub[2][index]);
               },
+              splashColor: ColorsConsts.blue,
+              borderRadius: BorderRadius.circular(16),
               child: Card(
                 elevation: 8,
                 shadowColor: Colors.grey,
@@ -146,15 +149,14 @@ class HomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(16),
                         child: FadeInImage(
                           image: NetworkImage(sub[1][index]),
-                          fit: BoxFit.cover,
                           placeholder:
-                              const AssetImage('assets/images/placeHolder.jpg'),
+                             const AssetImage('assets/images/placeHolder.jpg'),
+                          fit: BoxFit.cover,
+                          imageErrorBuilder: (context, error, stackTrace) {
+                            return Image.asset('assets/images/placeHolder.jpg',
+                                fit: BoxFit.cover);
+                          },
                         ),
-
-                        // child: Image.network(
-                        //   sub[1][index],
-                        //   fit: BoxFit.cover,
-                        // ),
                       ),
                     ),
                     Container(
