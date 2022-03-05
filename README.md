@@ -9,7 +9,7 @@ A new Flutter project.
 This is a quiz application with timing functionality.Where you will find multiple categories all images are used from unsplash.com and opentdb.com is used for quiz questions.Below are some screenshots
 
 
-<img src="https://user-images.githubusercontent.com/66320156/146768802-50c3e490-94ed-48eb-bfb8-de650bcf5531.png" width="200" height="300"/>
+<img src="https://user-images.githubusercontent.com/66320156/156772145-9d740ee6-8e78-4e1e-9fd6-4e748cd20f51.png" width="200" height="300"/>
 <img src="https://user-images.githubusercontent.com/66320156/146768802-50c3e490-94ed-48eb-bfb8-de650bcf5531.png" width="200" height="300"/>
 <img src="https://user-images.githubusercontent.com/66320156/146768802-50c3e490-94ed-48eb-bfb8-de650bcf5531.png" width="200" height="300"/>
 <img src="https://user-images.githubusercontent.com/66320156/146768802-50c3e490-94ed-48eb-bfb8-de650bcf5531.png" width="200" height="300"/>
